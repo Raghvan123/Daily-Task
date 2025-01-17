@@ -1,0 +1,61 @@
+#Declare a div() function with two parameters. Then call the function and pass two numbers and display their division
+#define the function with two parameters 
+def div(a,b):
+    result = a/b
+    return result
+#declare  the two variable 
+num1= int(input("Enter the first number: "))
+num2= int(input("Enter the second number: "))
+#print the function
+print("Division of two numbers is : ", div(num1,num2))
+
+
+
+--------------------------------------------------------------------------------------------------------------
+#Declare a square() function with one parameter.Then call the function and pass one
+#define the function with one parameter 
+def square(z):
+    result = z*z
+    return result
+#declare the variable 
+number = int(input("Enter an number: "))
+#print the function 
+print("Square is : ", square(number))
+
+
+
+--------------------------------------------------------------------------------------------------------------
+# Using max() and min() functions display the maximum and minimum of 5 random number
+
+numbers = input("Enter 5 Random Numbers(Sepearted by Spaces): ").split()
+
+print("Random Numbers:",numbers)
+
+print("Maximum Value:",max(numbers))
+print("Minimum Value:",min(numbers))
+
+
+
+--------------------------------------------------------------------------------------------------------------
+#Accept a name from the user and display that in lower case using lower() function
+#Accept a name from the user
+name = input("Enter your Name:  ")
+#print the result 
+print("Your Name :",name.lower())
+
+
+
+--------------------------------------------------------------------------------------------------------------
+#Write a lambda function that takes one argument and returns 'Positive' if the number is greater than 0,
+#'Negative' if it's less than 0,
+#'Zero' if it's 0.
+# Test it with different numbers.
+
+
+number = lambda num : "Positive" if num > 0 else "Negative" if num < 0 else "Zero"
+
+print(number(0))
+print(number(90))
+print(number(-24))
+
+
